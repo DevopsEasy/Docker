@@ -43,7 +43,7 @@
 * We will be using docker to create these isolated areas called as containers.
 * Docker is british expression for Dock Worker who is responsible for loading and unloading container in the ship yard.
 
-![Preview](./Images/dockworkers.jpg)
+![Preview](./Images/DockWorkers.jpg)
 
 ### Intro to Linux Containers
 
