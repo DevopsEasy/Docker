@@ -1,14 +1,14 @@
 ## Docker Image
 * We need to package the applications developed in our organization as docker images.
 
-![Preview](./docker-image.png)
+![Preview](./Images/docker-image.png)
 
 ## Advantages of docker images:
 * Running an app on docker will give more priority to cpu and other resources consumed by application rather than os
 * Cost Reduction: On one host we can run multiple applications seamlessly which reduces hardware costs and os costs
 * Docker is extremely portable, Docker container literally runs anywhere
 
-![Preview](./docker-image1.png)
+![Preview](./Images/docker-image1.png)
 
 ## Installing Docker
 * Lets install Docker on a linux machine
