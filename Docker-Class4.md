@@ -14,7 +14,7 @@
 
     * On the machine we have cpu, ram and storage and the operating system is creating processes to run applications
     * Let me create a alpine container and log in to the container
-      ![Preview](./docker-work4.png)
+      ![Preview](./Images/docker-work4.png)
 
       ![Preview](./Images/docker-work5.png)
 
