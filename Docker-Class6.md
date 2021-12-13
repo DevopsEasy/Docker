@@ -77,7 +77,7 @@ RUN apt update && apt-get install nginx -y
 
     * Our container is not running, lets see the status of all the containers
 
-    ![Preview](./docker-container.png)
+    ![Preview](./Images/docker-container.png)
 
     * Why did our container exit. Lets look at CMD
         * The container will be running as long as the command CMD is in running state. Once the command finishes execution docker daemon will assume the containers job is done and exits the container
@@ -87,7 +87,7 @@ RUN apt update && apt-get install nginx -y
         ```
         docker container run variant1:1.0 pwd
         ```
-        ![Preview](./docker-container.png)
+        ![Preview](./Images/docker-container.png)
 
 ### ENTRYPOINT
 
@@ -125,7 +125,7 @@ docker container run variant2:1.0 devops easy
 
 * When we run the container the container by default will be in attached mode i.e. it will redirect stdout to our terminal
 
-![Preview](./docker-container2.png)
+![Preview](./Images/docker-container2.png)
 
 * In reality we would not want to run our containers in the foreground/attached mode rather we want to run containers in the background /detached mode
 
@@ -133,5 +133,5 @@ docker container run variant2:1.0 devops easy
 docker container run -d jenkins/jenkins
 # This command will just output the container id
 ```
-![Preview](./docker-container3.png)
+![Preview](./Images/docker-container3.png)
 
