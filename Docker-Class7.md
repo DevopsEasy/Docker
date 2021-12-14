@@ -56,7 +56,7 @@ exit
 WORKDIR instruction
 * In the below image we ran two different containers where the working directory of the containers are different
 
-![Preview](./docker-workdir.png)
+![Preview](./Images/docker-workdir.png)
 
 * By default if we donot specify the default working directory is /
 * Where as in Dockerfile it is possible to change the working directory
@@ -94,7 +94,7 @@ docker container run -it workdirdemo:1.0 /bin/bash
 pwd
 ls
 ```
-![Preview](./docker-workdir1.png)
+![Preview](./Images/docker-workdir1.png)
 
 ## ADD and COPY instruction
 * During the docker image build process we might require to copy files from our local system into docker image filesystem. This can be acheived by using COPY/ADD instruction
@@ -121,7 +121,7 @@ ADD <source> <destination>
 * Now create a Dockerfile in same location of index.html file
 
 ```Dockerfile
-FROM ubuntu:latest
+FROM ubuntu:18.04
 LABEL author="DevopsEasy"
 RUN apt-get update && apt-get install apache2 -y
 WORKDIR /var/www/html/
@@ -134,7 +134,7 @@ CMD ["echo","helloworld"]
 ## USER instruction
 * Look at the example below
 
-![Preview](./docker-user.png)
+![Preview](./Images/docker-user.png)
 
 * So there is some way to set the default user other than root user in DockerImage. This can be achieved by using USER instruction.
 
@@ -162,13 +162,13 @@ CMD ["whoami"]
 ```
 docker image build -t userdemo:1.0 .
 ```
-![Preview](./docker-user1.png)
+![Preview](./Images/docker-user1.png)
 
 * Create a container and keep it running in the background
 
-![Preview](./docker-user2.png)
+![Preview](./Images/docker-user2.png)
 
-![Preview](./docker-user3.png)
+![Preview](./Images/docker-user3.png)
 
 * EXPOSE instruction is used to inform Docker that a container is listenting on the specified port at run time
 
@@ -179,7 +179,7 @@ EXPOSE <port>/<protocol>
 * Ports exposed Expose instruction will only be accesible within docker container
 * To access the ports from the host we can use ``` -p <host-port>:<container-port> or -P ```
 
-![Preview](./docker-expose.png)
+![Preview](./Images/docker-expose.png)
 
 * To verify if the application is running or not we can create HEALTHCHECK insturction
 
@@ -197,17 +197,17 @@ EXPOSE 80
 CMD ["apache2ctl", "-D", "FOREGROUND"]
 ```
 
-![Preview](./docker-healthcheck.png)
+![Preview](./Images/docker-healthcheck.png)
 
 * Lets remove all the containers
 
-![Preview](./docker-rm-container.png)
+![Preview](./Images/docker-rm-container.png)
 
-![Preview](./docker-rm-container1.png)
+![Preview](./Images/docker-rm-container1.png)
 
 * Lets remove all the images
 
-![Preview](./docker-rm-images.png)
+![Preview](./Images/docker-rm-images.png)
 
 * All the containers are deleted as well as the images
 Lets understand how image layers impact docker container
