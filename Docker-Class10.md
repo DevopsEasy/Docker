@@ -63,9 +63,9 @@ RUN cd spring-petclinic && mvn package
 
 FROM openjdk:11
 LABEL author="Josef"
-COPY --from=mvn /spring-petclinic/target/spring-petclinic-2.4.2.jar /spring-petclinic-2.4.2.jar
+COPY --from=mvn /spring-petclinic/target/*.jar /*.jar
 EXPOSE 8080
-CMD ["java", "-jar", "/spring-petclinic-2.4.2.jar"]
+CMD ["java", "-jar", "/*.jar"]
 ```
 * Now build the Dockerfile
 
