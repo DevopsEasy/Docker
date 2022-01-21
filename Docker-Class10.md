@@ -32,15 +32,15 @@ EXPOSE 8080
 ```
 docker image build -t gameoflife:1.0 .
 ```
-![Preview](./docker121.png)
+![Preview](./Images/docker121.png)
 
 * Docker first tries to build the stages in the above case it will build the mvn stage first and then it builds the docker image with the last FROM which will be what your image will have. the necessary files will be copied from stages into the Docker image depending on instructions
 
 * Lets run the container
 
-![Preview](./docker122.png)
+![Preview](./Images/docker122.png)
 
-![Preview](./docker123.png)
+![Preview](./Images/docker123.png)
 
 * Now lets try to build one more docker image using the multi staged build
 
@@ -73,13 +73,13 @@ CMD ["java", "-jar", "/spring-petclinic-2.4.2.jar"]
 docker image build -t spc:1.0 .
 ```
 
-![Preview](./docker124.png)
+![Preview](./Images/docker124.png)
 
 * Now lets run the container
 
-![Preview](./docker125.png)
+![Preview](./Images/docker125.png)
 
-![Preview](./docker126.png)
+![Preview](./Images/docker126.png)
 
 ### Docker on Windows Server
 * Lets create a Windows Server 2016 instance in any cloud
@@ -93,7 +93,7 @@ Install-Package -Name docker -ProviderName DockerMsftProvider
 Restart-Computer -Force
 ```
 
-![Preview](./docker128.png)
+![Preview](./Images/docker128.png)
 
 * Post machine restart, Launch Powershell as admin
 
@@ -101,7 +101,7 @@ Restart-Computer -Force
 docker info
 ```
 
-![Preview](./docker129.png)
+![Preview](./Images/docker129.png)
 
 * Now lets try to pull iis server image
 
@@ -122,9 +122,9 @@ docker container ls
 docker container exec -it <container id/name> powershell
 
 ```
-![Preview](./docker135.png)
+![Preview](./Images/docker135.png)
 
-![Preview](./docker136.png)
+![Preview](./Images/docker136.png)
 
 
 * To get info about the disks in the container run the powershell commands as [Refer Here](https://www.ghacks.net/2019/05/28/look-up-hard-disk-information-with-powershell/)
