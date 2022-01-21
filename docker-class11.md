@@ -21,7 +21,7 @@ Also refer OSI Networking Model over [here](https://en.wikipedia.org/wiki/OSI_mo
 ## Docker Networking Architecture
 * Docker Networking Architecture is based on Container Networking Model.
 
-![Preview](./cnm.png)
+![Preview](./Images/cnm.png)
 
 ## CNM Constructs – Sandbox
 * Contains the configuration of the containers network stack.
@@ -40,7 +40,7 @@ Also refer OSI Networking Model over [here](https://en.wikipedia.org/wiki/OSI_mo
 * CNM provides two pluggable & open interfaces to leverage additional functionality and control in the network
     * Network Drivers
     * IPAM Drivers
-    ![Preview](./cnm-api.png)
+    ![Preview](./Images/cnm-api.png)
 
 ## Docker Native Network Drivers
 
@@ -74,59 +74,59 @@ Also refer OSI Networking Model over [here](https://en.wikipedia.org/wiki/OSI_mo
 ## Host Network Driver
 * In host network driver all the containers are in same network namespace(sandbox)
 
-![Preview](./host-driver.png)
+![Preview](./Images/host-driver.png)
 
 ## Bridge Network Driver
 * Default Bridge Network Driver
 
-![Preview](./bridge-driver.png)
+![Preview](./Images/bridge-driver.png)
 
 * User-Defined Bridge Networks
 
-![Preview](./bridge2.png)
+![Preview](./Images/bridge2.png)
 
 ## Practical Implementation
 * Images of the commands used in class
 
-![Preview](./docker137.png)
+![Preview](./Images/docker137.png)
 
-![Preview](./docker138.png)
+![Preview](./Images/docker138.png)
 
-![Preview](./docker139.png)
+![Preview](./Images/docker139.png)
 
-![Preview](./docker140.png)
+![Preview](./Images/docker140.png)
 
-![Preview](./docker141.png)
+![Preview](./Images/docker141.png)
 
-![Preview](./docker142.png)
+![Preview](./Images/docker142.png)
 
 * On the default bridge n/w we can establish communication b/w two containers using ip addresses but not by names
 
-![Preview](./docker143.png)
+![Preview](./Images/docker143.png)
 
 * Now lets create two more containers in our user-defined bridge network
 
-![Preview](./docker144.png)
+![Preview](./Images/docker144.png)
 
-![Preview](./docker145.png)
+![Preview](./Images/docker145.png)
 
-![Preview](./docker146.png)
+![Preview](./Images/docker146.png)
 
 * Now lets login into a1 container and check the connectivity with a2
 
-![Preview](./docker147.png)
+![Preview](./Images/docker147.png)
 
 * We can connect the running containers to a different network
 
-![Preview](./docker148.png)
+![Preview](./Images/docker148.png)
 
-![Preview](./docker149.png)
+![Preview](./Images/docker149.png)
 
 * All the containers in the same network will have n/w communication but the containers in different n/ws will not have connectivity
 * In the case of windows for single host networking we have nat driver which is similar to bridge in linux and we have transparent driver which is similar to host driver in linux
 * Application and database containers on single host
 
-![Preview](./docker150.png)
+![Preview](./Images/docker150.png)
 
 * Now when we run our containers on a single host and if this host is down then our application also will be down. So we need a solution where we can run docker containers on different hosts and there should be n/w connectivity b/w them
 * The bridge/nat/host/transperent drivers can create a network which has a scope of single host (local)
