@@ -33,7 +33,7 @@
 
 * On successful application creation, you will see a long result on screen. At the end, you will find the result like below with some useful commands.
 
-![Preview](./create-reactjs-application.png)
+![Preview](./Images/create-reactjs-application.png)
 
 ## Start React Application
 
@@ -59,7 +59,7 @@ To create a production build, use yarn build.
 
 * The default react application start on port 3000. Access your React application using 3000 port with system IP address. For local machine use “localhost” followed by port.
 
-![Preview](reactjs-on-ubuntu.png)
+![Preview](./Images/reactjs-on-ubuntu.png)
 
 
 ## Create React.js Production Build
