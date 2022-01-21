@@ -126,7 +126,7 @@ CMD ["yarn","start"]
 * To solve this we can use thin image with multistage build approach
 * Let us try to deploy to ngnix webserver using Docker MultiStage Build
 
-```
+```Dockerfile
 FROM node:10 as builder
 WORKDIR /app
 COPY . .
