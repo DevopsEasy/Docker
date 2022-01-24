@@ -25,7 +25,7 @@
     * In this lets try to create a httpd container and nginx container
     * [Refer Here](https://raw.githubusercontent.com/DevopsEasy/DockerClass/main/compose/hello-compose/docker-compose.yml) for the docker-compose.yaml
 
-    ![Preview](.Images//docker171.png)
+    ![Preview](./Images//docker171.png)
 
     ![Preview](./Images/docker172.png)
 
