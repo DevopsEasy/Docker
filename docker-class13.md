@@ -2,7 +2,7 @@
 * This is a tool for defining an running multi container Docker applications
 * All the modern applications will have the some/all of the following components
 
-![Preview](./docker168.png)
+![Preview](./Images/docker168.png)
 
 * When all of these components work together we have a successful application
 * Lets understand microservices
@@ -19,17 +19,17 @@
 
 * On Linux machines we need to install docker-compose [Refer Here](https://docs.docker.com/compose/install/)
 
-![Preview](./docker170.png)
+![Preview](./Images/docker170.png)
 
 * Hello-world:
     * In this lets try to create a httpd container and nginx container
     * [Refer Here](https://raw.githubusercontent.com/DevopsEasy/DockerClass/main/compose/hello-compose/docker-compose.yml) for the docker-compose.yaml
 
-    ![Preview](./docker171.png)
+    ![Preview](.Images//docker171.png)
 
-    ![Preview](./docker172.png)
+    ![Preview](./Images/docker172.png)
 
-    ![Preview](./docker173.png)
+    ![Preview](./Images/docker173.png)
 
 
 * Building images and running containers
@@ -41,7 +41,7 @@
      docker container ls
      docker image ls
      ```
-     ![Preview](./docker174.png)
+     ![Preview](./Images/docker174.png)
 
     * Creating a docker-compose file with a network and volume
     * [Refer Here](https://github.com/DevopsEasy/DockerClass/blob/main/compose/network-compose/docker-compose.yml) for the docker-compose file
@@ -55,7 +55,7 @@
      docker volume ls
      docker network ls
     ```
-    ![Preview](./docker175.png)
+    ![Preview](./Images/docker175.png)
 
 ## Run container in Production Environments
 * We generally run Production environment on multiple servers
@@ -89,15 +89,15 @@ The configuration or state of the system will be stored in the database on all m
 ## Running Docker Containers
 * With CPU Limits
 
-![Preview](./docker176.png)
+![Preview](./Images/docker176.png)
 
 * With memory limits
 
-![Preview](./docker177.png)
+![Preview](./Images/docker177.png)
 
-![Preview](./docker178.png)
+![Preview](./Images/docker178.png)
 
 * [Refer Here](https://docs.docker.com/config/containers/resource_constraints/) for limiting cpu, ram for docker container
 * Docker container allows us to change few configurations while the container is running
 
-![Preview](./docker179.png)
+![Preview](./Images/docker179.png)
