@@ -29,7 +29,7 @@ docker info
 * For docker commands use cheatsheet [Refer Here](https://docs.docker.com/get-started/docker_cheatsheet.pdf) for docker cheatsheet.
 ![Preview](./Images/docker-workflow.png)
 ![Preview](./Images/docker-version.png)
-Lets try to run the following container
+* Lets try to run the following container
 
 ```
 docker container run hello-world
