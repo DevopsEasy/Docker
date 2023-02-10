@@ -50,12 +50,12 @@ java -jar spring-petclinic-2.4.2.jar
     docker image build -t spc_one:1.0 .
     docker image ls
     ```
-    ![Preview](./Images/docker15.png)
+    ![Preview](./Images/dockerfeb7_23.png)
     * Lets create a container in a detached mode with name processone
     ```
     docker container run -d --name processone -p 8081:8080 spc_one:1.0
     ```
-    ![Preview](./Images/docker16.png)
+    ![Preview](./Images/dockerfeb8_23.png)
     * Now access the application http://<vm-ip:8081
 
 ## Approach 2:
@@ -70,10 +70,10 @@ CMD ["java", "-jar", "/spring-petclinic-2.4.2.jar"]
 ```
 * Build the image docker image build -t spc_two:1.0 .
 * List the images
-![Preview](./Images/docker17.png)
+![Preview](./Images/dockerfeb9_23.png)
 * Create the container ``` docker container run --name processtwo -d -P spc_two:1.0 ```
-![Preview](./Images/docker18.png)
+![Preview](./Images/dockerfeb10_23.png)
 * Now access the application
-![Preview](./Images/docker19.png)
+![Preview](./Images/dockerfeb11_23.png)
 * Generally all the image publisher have slim options which further reduces the size of container on disk
 Exercise: Try using ``` amazoncorreto:11-alpine-jdk ``` as base image and build spc_three
