@@ -80,3 +80,44 @@ RUN touch 2.txt
 * The container created from image gets an extra read/write layer.
 * Any changes done will be present in the read/write layer of the container not image layer.
 * Docker needs a special filesystem which can show the layers mounted on each other as normal file system. To make it possible docker has special file systems such as overlay and union file system.
+
+## Activity: Lets build a nodejs application
+
+* Lets try to run a simple nodejs application with angularjs frontend
+* The code of the application is [Refer Here](https://github.com/gothinkster/angular-realworld-example-app)
+* To run this application we need
+    * node js
+    * npm
+* Node js image [Refer Here](https://hub.docker.com/_/node)
+* Manual steps:
+
+```
+git clone https://github.com/gothinkster/angular-realworld-example-app.git
+cd angular-realworld-example-app
+npm install -g @angular/cli
+npm install
+# To start the application http://localhost:4200
+ng serve 
+```
+* LABEL instruction is used to add metadata [Refere here](https://docs.docker.com/engine/reference/builder/#label)
+* WORKDIR instruction [Refer Here](https://docs.docker.com/engine/reference/builder/#workdir)
+* Dockerfile provided below
+
+```Dockerfile
+FROM node:16
+LABEL project="devopseasy"
+LABEL author="docker-devops"
+RUN git clone https://github.com/gothinkster/angular-realworld-example-app.git
+RUN cd angular-realworld-example-app && npm install -g @angular/cli && npm install
+EXPOSE 4200
+WORKDIR /angular-realworld-example-app
+CMD ["ng", "serve", "--host", "0.0.0.0"]
+```
+* Generally docker files are present closer to code. If we want code to be copied in the image we can use ADD . <dest>
+* For copying the localfiles into image we can use two instructions 
+    * ADD
+        * copy from local as well as remote (web or http urls or git)
+    * COPY
+        * copy only from local machine.
+
+
