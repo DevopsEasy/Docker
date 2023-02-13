@@ -41,12 +41,12 @@ CMD ["catalina.sh","run"]
 
 ## Docker Image Layers
 * Lets pull openjdk:8 image
-![Preview](./Images/docker15.png)
+![Preview](./Images/dockerfeb15.png)
 
 * We are observing lot of things getting pulled as part of this image.
 * Lets try one more image
 
-![Preview](./Images/docker16.png)
+![Preview](./Images/dockerfeb16.png)
 
 * The stuff that is getting downloaded is called as image layer.
 * Docker image is collection of image layers
@@ -57,13 +57,13 @@ CMD ["catalina.sh","run"]
 FROM alpine:3
 RUN touch 1.txt 
 ```
-![Preview](./Images/docker17.png)
+![Preview](./Images/dockerfeb17.png)
 
 * Now lets inspect trail:1.0
 
-![Preview](./Images/docker18.png)
+![Preview](./Images/dockerfeb18.png)
 
-![Preview](./Images/docker19.png)
+![Preview](./Images/dockerfeb19.png)
 
 * Lets create one more version of trail:2.0
 
@@ -72,8 +72,8 @@ FROM alpine:3
 RUN touch 1.txt
 RUN touch 2.txt
 ```
-![Preview](./Images/docker20.png)
-![Preview](./Images/docker21.png)
+![Preview](./Images/dockerfeb20.png)
+![Preview](./Images/dockerfeb21.png)
 
 * In the above case two layers are reused and a new layer is created.
 * Docker image layers are read-only.
