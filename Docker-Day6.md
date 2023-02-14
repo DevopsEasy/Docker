@@ -178,8 +178,10 @@ EXPOSE <port>/<protocol>
 ```
 * Ports exposed Expose instruction will only be accesible within docker container
 * To access the ports from the host we can use ``` -p <host-port>:<container-port> or -P ```
-
-![Preview](./Images/docker-expose.png)
+```
+docker container run -d -p 8080:80 --name apache1 httpd
+docker container run -d -P --name apache1 httpd
+```
 
 * To verify if the application is running or not we can create HEALTHCHECK insturction
 
