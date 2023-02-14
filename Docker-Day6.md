@@ -114,7 +114,7 @@ ADD <source> <destination>
 ```html
 <html>
     <body>
-        <h1>Welcome to Quality Thought</h1>
+        <h1>Welcome to Devops Easy</h1>
     </body>
 </html> 
 ```
