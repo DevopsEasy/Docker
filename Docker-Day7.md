@@ -149,5 +149,3 @@ docker image build -t gameoflife:1.0 .
 ![Preview](./Images/docker122.png)
 
 ![Preview](./Images/docker123.png)
-
-* Now lets try to build one more docker image using the multi staged build
