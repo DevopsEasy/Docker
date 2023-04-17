@@ -29,6 +29,8 @@
    * RAM
    
    ![Preview](./Images/dockerfeb4_23.png)
+   
+   ![Preview](./Images/server-generation.png)
 
 ## The idea of microservices
 * Lets look at a typical ecommerce application
@@ -52,6 +54,10 @@
     * Each service can be in different technology.
      
      ![Preview](./Images/dockerfeb6_23.png)
+     
+     ![Preview](./Images/monolithic.png)
+     
+     ![Preview](./Images/microservices.png)
 
 ## What is that we need to do as Devops Engineer
 * Make your application/service run inside containers => containerization => Docker
