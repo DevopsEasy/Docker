@@ -55,7 +55,7 @@
      
      ![Preview](./Images/dockerfeb6_23.png)
      
-     ![Preview](./Images/monolithic.png)
+     ![Preview](./Images/monolothic.png)
      
      ![Preview](./Images/microservices.png)
 
